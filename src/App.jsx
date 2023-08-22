@@ -7,11 +7,16 @@ import Me from "./components/Me";
 
 function App() {
   const [damageScore, setDamageScore] = useState(0);
+  const [myHitpoints, setMyHitpoints] = useState(20);
 
   return (
     <>
       <Header damageScore={damageScore} />
-      <Me damageScore={damageScore} setDamageScore={setDamageScore} />
+      <Me
+        damageScore={damageScore}
+        setDamageScore={setDamageScore}
+        myHitpoints={myHitpoints}
+      />
     </>
   );
 }
